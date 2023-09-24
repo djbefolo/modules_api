@@ -8,8 +8,9 @@ gunicorn = "<22.0,>=21.2"
 numpy = "*"
 pandas = "*"
 sklearn = "*"
+flask = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.9"
+python_version = "3.11"
