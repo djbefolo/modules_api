@@ -10,6 +10,10 @@ from prediction_api import *
 # Your API definition
 app = Flask(__name__)
 
+@app.route("/")
+def home_view():
+        return "<h1>Welcome</h1>"
+    
 @app.route('/predict', methods=['POST'])
 def predict():
     randomForest = pickle.load(open("classifier_rf_model.sav", 'rb'))
