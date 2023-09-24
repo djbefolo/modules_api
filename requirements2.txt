@@ -1,0 +1,4 @@
+gunicorn>=21.2,<22.0 
+numpy
+pandas
+sklearn
